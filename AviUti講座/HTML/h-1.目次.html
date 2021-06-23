@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+    <html lang="jp" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../実はヘルプの見た目はこのファイルで設定してる(どうでもいいｗ).css" />
+        <title>動画編集講座-目次</title>
+        <link rel="icon" href="" id="fav">
+        <style>
+            .yokoso {
+                font-size: 35px;
+            }
+            .youkoso-setumei {font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+<script src="../ソース.js"></script>
+<div id="Display_content"></div>
+<script>
+
+const content = `
+        <h5 class="yokoso">ようこそ</h5>
+            <p class="youkoso-setumei">このフォイルでは動画編集ソフト(主にAviUtlについての操作を学ぶファイルです。)<p/>
+            <p class="youkoso-setumei">音声編集ソフトの「REAPER」については、<br>
+                導入したうえにコレを書いてる中の人も使ったこと無いので分かりません。<br>
+                なので、ピッチ変更などを使ってえげつないクオリティーにしたいラジオ部門での人がいるのであればggってください</p>
+            <p>もちろん、AviUtl(エーブイアイユーティル)だけである程度のラジオ番組は作れます。</p>
+        <br>
+
+        <h2><a href=` + hello[0] + `" target="_blank">見るときの優先度(?)について【最初に読むことをおすすめします】</a></h2>
+        <p>このヘルプの読む順番などを説明します。</p>
+        <br>
+        <h2><a href=` + mokuzi[1] + ` target="_blank">簡易版の動画を見る</a></h2>
+        <p>2日クオリティーでだいぶ簡易的なので、ざっくりとだけ知りたい時しか見ることをおすすめしません。</p>
+        <h1>イージー【Easy】</h1>
+
+            <p>まずは絶対のに覚えるべきの最低限の内容。<br>
+                必須項目です。断言します。</p>
+            <p>多分スマホ編集以下のことができる。</p><br>
+
+        <a href="h-おまけ.語録元ネタ.html#EasyMode" class="g" target="_blank">???「えーマジ!?イージーモード」<br>???「キモーイイージーモードが許されるのは小学生までだよねーｗｗ」</a>
+     <br>
+        <h2><a href=` + makeProject[0] + ` target="_blank">【Easy】編集プロジェクトを作ってみよう</a></h2>
+        <p>編集を始めるために編集ファイルを作りましょう。<br>
+        これが出来ないとAviUtlが扱えないぞ!?<br>
+        ※YMMは出来なくてもこの操作は要らないので問題なく使えます</p>
+        <p>メモ帳を使うのにテキストファイルを新規作成するようなものです<br>
+           ド基礎中のド基礎です</p>
+
+
+        <h2><a href="`+ makeObject[0] +`" target="_blank">【Easy】オブジェクトを挿入してみよう</a></h2>
+            <p>字幕や 画像、動画図形などの様々のものを召喚出来るようになります。</p>
+            <p>編集ソフトの基本中の基本。</p>
+        <h2><a href="`+operationObject[0]+`" target="_blank">【Easy】オブジェクトを操作してみよう</a></h2>
+        <p>召喚したオブジェクト色んな値を変更して<br>
+            字幕の内容を決めたりいい感じに設定します。</p>
+
+        <br><h1>中級</h1>
+            <p>コレを覚えるとそこそこのクォリティーになるでしょう。</p>
+            <p>覚えることを推奨します。</p>
+     <br>
+
+       <h1>上級</h1>
+            <p>コレを覚えると高クオリティーに出来たり、編集の効率化ができます。</p>
+            <p>こちらの世界にようこそ。</p>
+     <br>`
+     let element = document.getElementById('Display_content');
+     element.innerHTML = content;
+     </script>
+</body>
+</html>
