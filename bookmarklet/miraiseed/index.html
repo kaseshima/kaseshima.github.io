@@ -16,20 +16,20 @@
             }
         </style>
     </head>
-    <script>
-        
-        function setCode(){
-            let data = decodeURIComponent(location.hash).substr(1).split('/');
-            for (let i = 0; i < data.length; ++i) {
-                data[i] =decodeURIComponent(data[i]);
-                }
-            let code ="javascript:location.href = '"+data[0]+"';$('#myClassId').val('"+data[1]+"');$('input.number').val('"+data[2]+"');$('input.pass').val('"+data[3]+"');document.getElementsByClassName('btn')[1].click()";
-            document.getElementById('code').setAttribute('href', code);
-
-        };
-    </Script>
     <body>
-        <a href="code" class="btn btn--orange"id ="code" onload="setCode()">このリンクをブックマークに保存することで自動でログインができます</a>
+        <script>
+         
+            function setCode(){
+                let data = decodeURIComponent(location.hash).substr(1).split('/');
+                for (let i = 0; i < data.length; ++i) {
+                    data[i] =decodeURIComponent(data[i]);
+                    }
+                let code ="javascript:location.href = '"+data[0]+"';$('#myClassId').val('"+data[1]+"');$('input.number').val('"+data[2]+"');$('input.pass').val('"+data[3]+"');document.getElementsByClassName('btn')[1].click()";
+                document.getElementById('code').setAttribute('href', code);
+    
+            };
+        </Script>
+        <a href="javascript:" class="btn btn--orange"id ="code" onload="setCode()">このリンクをブックマークに保存することで自動でログインができます</a>
         <h1>上のリンクからブックマークを登録できない場合は下のコードをコピーしてください</h1>
         <p class="btn btn--orange">準備中</p>
     </body>
