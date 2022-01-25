@@ -13,8 +13,8 @@
                     data[i] =decodeURIComponent(data[i]);
                     }
                 let code ="javascript:location.href = '"+data[0]+"';$('#myClassId').val('"+data[1]+"');$('input.number').val('"+data[2]+"');$('input.pass').val('"+data[3]+"');document.getElementsByClassName('btn')[1].click()";
-                document.getElementById('code').setAttribute('href', code);
-                document.getElementById('a').innerHTML=code;
+                document.getElementById('code1').setAttribute('href', code);
+                document.getElementById('code2').innerHTML=code;
             };
         </Script>
         <a href="javascript:" id ="code1">このリンクをブックマークに保存することで自動でログインができます</a>
